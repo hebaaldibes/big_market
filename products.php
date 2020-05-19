@@ -72,11 +72,7 @@ $result_pro= mysqli_query($conn,$query_pro);
 				<div class="clearfix"> </div>
 				<nav class="numbering">
 					<ul class="pagination paging">
-						<li>
-							<a href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-						</li>
+
 						<?php 
 						$number_pro=mysqli_num_rows($result_pro);
 						$number_page=ceil($number_pro/9);
@@ -84,11 +80,7 @@ $result_pro= mysqli_query($conn,$query_pro);
 							<li class="paging_num"><a data-id="<?php echo $i;?>" id="pag_num<?php echo $i;?>">
 								<?php echo $i;?></a></li>
 							<?php }?>
-							<li>
-								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
-							</li>
+
 						</ul>
 					</nav>
 				</div>
